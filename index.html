@@ -10,7 +10,7 @@ li {
     list-style-type: none;
     margin: 0;
     padding: 5px;
-    color: black;
+    color: rgb(134, 134, 134);
 }
 .googlelogo {
     margin: auto;
@@ -23,15 +23,23 @@ li {
     
 }
 .search{
-    text-align:center;
-    
+    margin: auto;
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 13%;  
+    width: 350px; 
+    height: 25px;
 }
 
 input[type=text]{
-    border-radius: 100px;
+    border-radius: 200px;
     border-style: solid;
     border-width: thin;
-    color: lightgray;  
+    color: lightgray;
+    margin: auto;   
     
 }
 
@@ -53,12 +61,9 @@ input[type=text]{
 <div>
     <img src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" class="googlelogo" alt="Picture of Google logo">
     <form  class="search">
-    <label for="search"></label><br><input type="text" id="search" name="search" size="30">
+    <label for="search"></label><br><input type="text" id="search" name="search"  class="search">
     </form>
 
 </div>
-
-
-
 </body>
 </html>
