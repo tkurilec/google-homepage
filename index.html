@@ -1,7 +1,7 @@
 <html style="background-color: white;">
 
 <style>
-   
+
 li {
     display: inline;
     padding: 10px;
@@ -16,9 +16,9 @@ li {
     margin: auto;
     display: block;
     position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
+    top: 0%;
+    left: 0%;
+    right: 0%;
     bottom: 30%;   
     
 }
@@ -26,20 +26,46 @@ li {
     margin: auto;
     display: block;
     position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
+    top: 0%;
+    left: 0%;
+    right: 0%;
     bottom: 13%;  
     width: 450px; 
     height: 35px;
 }
 input[type=text]{
+    position: absolute;
     border-radius: 200px;
     border-style: solid;
     border-width: thin;
     color: lightgray;
     margin: auto;
     opacity: 60%;
+}
+
+.micimage{
+    display: block;
+    position: absolute;
+    margin: auto;
+    max-width: 3%;
+    max-height: auto;
+    top: 18%;
+    bottom: auto;
+    right: auto;
+    left: 94%;
+
+}
+
+.magglassimage{
+    display: block;
+    position: absolute;
+    margin: auto;
+    max-width: 6%;
+    max-height: auto;
+    top: 5%;
+    bottom: auto;
+    right: auto;
+    left: 2%;
 }
 
 .google-search-button {
@@ -94,7 +120,7 @@ input[type=text]{
     }
 
 .bottombar{
-    position: absolute;
+    position: fixed;
     width: 100%;
     height: 30px;
     background-color: rgb(240, 220, 220);
@@ -123,14 +149,21 @@ input[type=text]{
         
 <div>
     <img src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" class="googlelogo" alt="Picture of Google logo">
+</div>
+
     <form  class="search">
     <label for="search"></label><br><input type="text" id="search" name="search"  class="search">
-    </form>
+    <img src="https://icon-library.com/images/white-search-icon-png/white-search-icon-png-18.jpg" class="magglassimage" alt='small magnifying glass'>
+    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e8/Google_mic.svg/1200px-Google_mic.svg.png" class="micimage" alt='small google mic icon'>
+    
+</form>
+
+    
+
     <button class="google-search-button">Google Search</button>
     <button class="feeling-lucky-button">I'm Feeling Lucky</button>
+    
 
-</div>
-</body>
 
 <footer>
 <div class="bottombar">  
