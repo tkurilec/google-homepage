@@ -69,14 +69,23 @@ input[type=text]{
 
 }
 
-.bottombartext {
-    list-style-type: none;
-    margin: 0;
+.bottombarlefttext {
+    margin: auto;
     padding: 5px;
     color:black;
     display: block;
     position: fixed;
     bottom: 1px;
+}
+
+.bottombarrighttext {
+    margin: auto;
+    padding: 5px;
+    color:black;
+    display: block;
+    position: fixed;
+    bottom: 1px;
+    right: 0%;
 }
 
 </style>
@@ -105,12 +114,16 @@ input[type=text]{
 </div>
 </body>
 
-<footer><ul class="bottombartext">
+<footer><ul class="bottombarlefttext">
 <li>Advertising</li>
-<li>Business</li>
-<li style="float: right;">Privacy</li>
-<li style="float: right;">Terms</li>
-<li style="float: right;">Settings</li>
+<li style="left: 15px;">Business</li>
 
+</ul>
+<ul class="bottombarrighttext">
+<li>Privacy</li>
+<li>Terms</li>
+<li>Settings</li>
+
+</ul>
 </footer>
 </html>
